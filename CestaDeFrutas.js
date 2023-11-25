@@ -25,7 +25,7 @@ class CestaDeFrutas {
     if (this.numeroDeFrutas == 0) {
       return true;
     } else {
-      return false;
+      return true;
     }
   }
 
