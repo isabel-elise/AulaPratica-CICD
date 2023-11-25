@@ -12,5 +12,9 @@ jobs:
 
         steps:
             - uses: actions/checkout@v1
-            - name: Teste no sistema operacional ${{ matrix.os }}
+
+            - name: instalação do jest
+              run: npm install jest
+
+            - name: execução dos testes
               run: npm test
