@@ -12,7 +12,5 @@ jobs:
 
         steps:
             - uses: actions/checkout@v1
-            - name: Teste no sistema operacional ${{ matrix.os-version }}
-              run: |
-                  npm run build
-                  npm test
+            - name: Teste no sistema operacional ${{ matrix.os }}
+              run: npm test
